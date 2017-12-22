@@ -1,0 +1,13 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+    <item name="ic_menu_home" type="drawable">@drawable/ic_home</item>
+    <item name="ic_menu_charts" type="drawable">@drawable/ic_charts</item>
+    <item name="ic_menu_tasks" type="drawable">@drawable/ic_tasks</item>
+    <item name="ic_menu_tags" type="drawable">@drawable/ic_tags</item>
+    <item name="ic_menu_export" type="drawable">@drawable/ic_export</item>
+    <item name="ic_menu_about" type="drawable">@drawable/ic_about</item>
+    <item name="ic_nav_left" type="drawable">@drawable/ic_chevron_left_black_24dp</item>
+    <item name="ic_nav_right" type="drawable">@drawable/ic_chevron_right_black_24dp</item>
+    <item name="ic_nav_first" type="drawable">@drawable/ic_first_page_black_24dp</item>
+    <item name="ic_nav_last" type="drawable">@drawable/ic_last_page_black_24dp</item>
+
+</resources>

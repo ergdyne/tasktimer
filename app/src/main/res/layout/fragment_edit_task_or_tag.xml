@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/row_height">
+
+        <TextView
+            android:id="@+id/textView_edit_task_caption"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/cap_task"
+            android:textSize="@dimen/text_size_small"
+            android:layout_centerVertical="true"
+            android:layout_alignParentStart="true"/>
+
+        <TextView
+            android:id="@+id/textView_editedTaskName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/textView_edit_task_caption"
+            android:text="@string/cap_dots"
+            android:textSize="@dimen/text_size_default"
+            android:textStyle="bold"
+            android:layout_alignBaseline="@+id/textView_edit_task_caption"
+            android:layout_alignBottom="@+id/textView_edit_task_caption"
+            android:layout_alignParentEnd="true" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/row_height">
+
+        <AutoCompleteTextView
+            android:id="@+id/autoCompleteTextView_renameTask"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:dropDownHeight="wrap_content"
+            android:hint="@string/hint_rename_task" />
+
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout_reminder"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/row_height"
+        android:clickable="true">
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/text_size_small"
+            android:text="@string/hint_set_alarm"
+            android:layout_centerVertical="true"/>
+
+        <TextView
+            android:id="@+id/textView_reminder"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/text_size_small"
+            android:text="@string/cap_emptyHHMM"
+            android:layout_toEndOf="@+id/textView4"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/pad_small_item"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/row_height">
+
+        <TextView
+            android:id="@+id/textView_delete_task_caption"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toStartOf="@+id/checkBox_deleteTask"
+            android:text="@string/cap_check_delete"
+            android:textSize="@dimen/text_size_small" />
+
+        <CheckBox
+            android:id="@+id/checkBox_deleteTask"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true" />
+
+    </RelativeLayout>
+
+</LinearLayout>

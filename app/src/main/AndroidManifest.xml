@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.ergdyne.tasktimer" >
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="com.android.alarm.permission.SET_ALARM"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.ergdyne.tasktimer.MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="adjustNothing"
+            >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".EditEventActivity"
+            android:parentActivityName=".MainActivity"
+            android:windowSoftInputMode="adjustNothing"
+        />
+        <activity android:name=".EditTaskActivity"
+            android:parentActivityName=".MainActivity"
+            android:windowSoftInputMode="stateHidden|adjustResize"
+            />
+        <activity android:name=".EditTagActivity"
+            android:parentActivityName=".MainActivity"
+            android:windowSoftInputMode="adjustNothing"
+            />
+        <activity android:name=".SubTotalsActivity"
+            android:parentActivityName=".MainActivity"
+            android:windowSoftInputMode="adjustNothing"
+            />
+
+        <provider
+            android:name="com.ergdyne.tasktimer.DBProvider"
+            android:authorities="com.ergdyne.tasktimer.DBProvider"
+            android:exported="false" >
+
+        </provider>
+
+
+    </application>
+
+
+</manifest>
+
+    <!--android:label="@string/app_name"-->

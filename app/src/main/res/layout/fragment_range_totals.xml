@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/row_height"
+        >
+
+        <Button style="@style/custom_button"
+            android:id="@+id/button_day"
+            android:layout_width="wrap_content"
+            android:background="@color/colorPrimaryDark"
+            android:text="@string/but_day"
+            android:layout_marginLeft="@dimen/pad_tiny_item"
+            android:layout_marginRight="@dimen/pad_tiny_item"
+            />
+
+        <Button style="@style/custom_button"
+            android:id="@+id/button_week"
+            android:layout_width="wrap_content"
+            android:text="@string/but_week"
+            android:layout_marginLeft="@dimen/pad_tiny_item"
+            android:layout_marginRight="@dimen/pad_tiny_item" />
+
+        <Button style="@style/custom_button"
+            android:id="@+id/button_month"
+            android:layout_width="wrap_content"
+            android:text="@string/but_month"
+            android:layout_marginLeft="@dimen/pad_tiny_item"
+            android:layout_marginRight="@dimen/pad_tiny_item" />
+
+
+        <Button style="@style/custom_button"
+            android:id="@+id/button_all"
+            android:layout_width="wrap_content"
+            android:text="@string/but_all"
+            android:layout_marginLeft="@dimen/pad_tiny_item"
+            android:layout_marginRight="@dimen/pad_tiny_item" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout_date_range"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/row_height"
+        android:visibility="visible">
+
+        <ImageView
+            android:id="@+id/imageView_first"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/ic_first_page_black_24dp"
+            android:clickable="true"/>
+
+        <ImageView
+            android:id="@+id/imageView_left"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/ic_chevron_left_black_24dp"
+            android:clickable="true"/>
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout_range_date"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="4"
+            android:clickable="true"
+            >
+
+            <TextView
+                android:id="@+id/textView_range_date_from"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                android:padding="@dimen/pad_tiny_item"
+                android:text="@string/cap_dots"
+                android:textSize="@dimen/text_size_default"
+
+                />
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/imageView_right"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/ic_chevron_right_black_24dp"
+            android:clickable="true"/>
+
+        <ImageView
+            android:id="@+id/imageView_last"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/ic_last_page_black_24dp"
+            android:clickable="true"/>
+
+
+
+    </LinearLayout>
+
+
+</LinearLayout>
